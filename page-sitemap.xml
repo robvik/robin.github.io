@@ -8,7 +8,7 @@
     
     <url>
         <loc>https://robvik.github.io/robin.github.io/about/</loc>
-        <lastmod>2019-04-26T18:59:36.997Z</lastmod>
+        <lastmod>2019-04-26T19:00:35.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -21,14 +21,14 @@
     </url>
     
     <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/</loc>
+        <loc>https://robvik.github.io/robin.github.io/archive/</loc>
         <lastmod>2019-03-26T22:18:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://robvik.github.io/robin.github.io/archive/</loc>
+        <loc>https://robvik.github.io/robin.github.io/tags/</loc>
         <lastmod>2019-03-26T22:18:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
