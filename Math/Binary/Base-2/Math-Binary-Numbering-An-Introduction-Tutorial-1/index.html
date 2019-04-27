@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          Robin Viktorsson | Blog
+          Math: Binary Numbering - An Introduction (Tutorial 1) - Robin Viktorsson | Blog
         
     </title>
 
-    <link rel="canonical" href="https://robvik.github.io/robin.github.io/robin.github.io/archives/">
+    <link rel="canonical" href="https://robvik.github.io/robin.github.io/robin.github.io/Math/Binary/Base-2/Math-Binary-Numbering-An-Introduction-Tutorial-1/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/robin.github.io/css/bootstrap.min.css">
@@ -71,8 +71,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/robin.github.io/img/header_img/archives-widget.jpg')
-            /*page*/
+            background-image: url('/robin.github.io/img/header_img/home.png')
+            /*post*/
         
     }
     
@@ -85,9 +85,22 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <!--<hr class="small">-->
-                        <span class="subheading"></span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/robin.github.io/tags/#Math" title="Math">Math</a>
+                            
+                              <a class="tag" href="/robin.github.io/tags/#Binary" title="Binary">Binary</a>
+                            
+                              <a class="tag" href="/robin.github.io/tags/#Base 2" title="Base 2">Base 2</a>
+                            
+                        </div>
+                        <h1>Math: Binary Numbering - An Introduction (Tutorial 1)</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Robin Viktorsson on
+                            2019-04-27
+                        </span>
                     </div>
                 
 
@@ -197,172 +210,223 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
-            
-            
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <h3 id="math-binary-number-base-2-tutorial-1">Math: Binary Number (Base 2) - Tutorial 1</h3>
+<p>In mathematics, a <strong>binary number</strong> is a numeric digit expressed in the base-2 system, which uses two numeric digits: 0 and 1.</p>
+<p>In binary numbering, each digit is referred to as a <strong>bit</strong>, short for <strong>b</strong>inary dig<strong>it</strong>. The binary number 1111011<sub>2</sub> has 7 binary digits.</p>
+<p>The binary system is the most fundamental numbering system in digital electronic circuitry. Unlike the decimal system which uses powers of ten, the binary numbering system works on powers of two giving a binary to decimal conversion from base-2 to base-10.</p>
+<p>A binary number, such as 1111011<sub>2</sub> is expressed with a string of 1’s and 0’s with each digit along the string from right to left having a value twice that of the previous digit. But as it is a binary digit it can only have a value of either 1 or 0. Therefore, based on the digits position in the string it is worth more or less.</p>
+<p>As the decimal number is a weighted number, converting from decimal to binary (base-10 to base-2) will also produce a weighted binary number with the right-hand most bit being the <strong>Least Significant Bit</strong> or <strong>LSB</strong>, and the left-hand most bit being the <strong>Most Significant Bit</strong> or <strong>MSB</strong>.</p>
+<table>
+  <tr>
+    <td>MSB</td>
+    <td colspan="7">Binary Digit</td>
+    <td>LSB</td>
+  </tr>
+  <tr>
+  	<td>2<sup>8</sup></td>
+    <td>2<sup>7</sup></td>
+    <td>2<sup>6</sup></td>
+    <td>2<sup>5</sup></td>
+    <td>2<sup>4</sup></td>
+    <td>2<sup>3</sup></td>
+    <td>2<sup>2</sup></td>
+    <td>2<sup>1</sup></td>
+    <td>2<sup>0</sup></td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td>128</td>
+    <td>64</td>
+    <td>32</td>
+    <td>16</td>
+    <td>8</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+  </tr>
+</table>
+<p>We saw above that in the decimal number system, the weight of each digit from right to left increases by a factor of 10. In the binary number system, the weight of each digit increases by a factor of 2 as shown. So for example, converting a binary to decimal number would be:</p>
+<table>
+<tr>
+<td>Decimal Digit Value</td>
+<td>256</td>
+<td>128</td>
+<td>64</td>
+<td>32</td>
+<td>16</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Binary Digit Value</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+<p>By adding together <strong>all</strong> the decimal number values from right to left at the positions that are represented by a 1 gives:</p>
+<p>256 + 64 + 32 + 4 + 1 = 357<sub>10</sub></p>
+<p>This results in:</p>
+<p>101100101<sub>2</sub> = 357<sub>10</sub></p>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
-                    <span class="tag-text">2019</span>
-                </span>
-                <ul>
                 
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    04-27
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/robin.github.io/Math/Binary/Base-2/Math-Binary-Numbering-An-Introduction-Tutorial-1/" style="color: #0085a1">
-                        <span>
-                            Math: Binary Numbering - An Introduction (Tutorial 1)
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    04-26
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/robin.github.io/article/Binary-Addition/" style="color: #0085a1">
-                        <span>
-                            Binary Addition
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/robin.github.io/article/Binary-Addition/" data-toggle="tooltip" data-placement="top" title="Binary Addition">Next Post &rarr;</a>
+                        </li>
+                    
                 </ul>
-            </div>
-            
-
-
-        </div>
-    </div>
-</div>
 
                 <br>
 
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
                 <!-- require APlayer -->
                 
 
-                <!-- 如果开启评论功能 -->
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#math-binary-number-base-2-tutorial-1"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Math: Binary Number (Base 2) - Tutorial 1</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/robin.github.io/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/robin.github.io/tags/#Math" title="Math">Math</a>
+                        
+                          <a class="tag" href="/robin.github.io/tags/#Binary" title="Binary">Binary</a>
+                        
+                          <a class="tag" href="/robin.github.io/tags/#Base 2" title="Base 2">Base 2</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
                 
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/robin.github.io/about/">ABOUT ME</a></h5>
-    <div class="short-about">
-
-        
-            <img id = "avatar_pic" src="/robin.github.io/img/avatar/profile_photo.jpeg" />
-        
-
-        
-            <p>Keep it cool.</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
-
-            
-
-            
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/robvik">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-            
-            
-            
-        </ul>
+        </div>
     </div>
-</section>
+</article>
 
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/robin.github.io/Math/Binary/Base-2/Math-Binary-Numbering-An-Introduction-Tutorial-1/">Math: Binary Numbering - An Introduction (Tutorial 1)</a>
-        </li>
-      
-        <li>
-          <a href="/robin.github.io/article/Binary-Addition/">Binary Addition</a>
-        </li>
-      
-    </ul>
-  </div>
 
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/robin.github.io/archives/2019/04/">April 2019</a><span class="archive-list-count">2</span></li></ul>
-    </div>
 
-        <hr>
-    
-        
-        <hr>
-    
-</div>
 
-        
-    </div>
-</div>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->

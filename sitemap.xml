@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>https://robvik.github.io/robin.github.io/post-sitemap.xml</loc>
-        <lastmod>2019-04-26T23:06:50.929Z</lastmod>
+        <lastmod>2019-04-27T20:47:47.385Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://robvik.github.io/robin.github.io/page-sitemap.xml</loc>
-        <lastmod>2019-04-27T06:30:08.000Z</lastmod>
+        <lastmod>2019-04-27T06:32:38.000Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://robvik.github.io/robin.github.io/category-sitemap.xml</loc>
+        <lastmod>2019-04-27T20:47:47.385Z</lastmod>
     </sitemap>
 
     <sitemap>

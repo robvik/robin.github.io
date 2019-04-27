@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
     <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/JavaScript/</loc>
-        <lastmod>2019-04-26T23:06:50.929Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
+        <loc>https://robvik.github.io/robin.github.io</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
     </url>
 
     <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/Programming/</loc>
-        <lastmod>2019-04-26T23:06:50.929Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/Math/</loc>
+        <loc>https://robvik.github.io/robin.github.io/categories/Math/</loc>
         <lastmod>2019-04-27T20:47:47.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/Binary/</loc>
+        <loc>https://robvik.github.io/robin.github.io/categories/Math/Binary/</loc>
         <lastmod>2019-04-27T20:47:47.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://robvik.github.io/robin.github.io/tags/Base-2/</loc>
+        <loc>https://robvik.github.io/robin.github.io/categories/Math/Binary/Base-2/</loc>
         <lastmod>2019-04-27T20:47:47.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
